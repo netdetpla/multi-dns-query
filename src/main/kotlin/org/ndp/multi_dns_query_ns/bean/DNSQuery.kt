@@ -5,6 +5,5 @@ import org.xbill.DNS.Lookup
 data class DNSQuery(
     val domain: String,
     val dnsServer: String,
-    val aRecordLookup: Lookup,
-    val cNameLookup: Lookup
+    val aRecordLookup: Lookup
 )
