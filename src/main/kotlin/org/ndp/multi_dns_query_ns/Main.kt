@@ -1,6 +1,5 @@
 package org.ndp.multi_dns_query_ns
 
-import org.ndp.multi_dns_query_ns.bean.DNSQuery
 import org.ndp.multi_dns_query_ns.bean.DNSRR
 import org.ndp.multi_dns_query_ns.bean.MQResult
 import org.ndp.multi_dns_query_ns.utils.Logger.logger
