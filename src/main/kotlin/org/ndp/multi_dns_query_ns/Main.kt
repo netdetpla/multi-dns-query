@@ -73,9 +73,11 @@ object Main {
             val l = q.get()
             val answers = l.getAnswers()
             if (answers.isNotEmpty()) {
+                logger.debug("${l.dnsServer}: ${l.domain}")
                 results.add(DNSRR(l.domain, l.dnsServer, l.getAnswers()))
             }
         }
+        executor.shutdown()
         return results
     }
 
