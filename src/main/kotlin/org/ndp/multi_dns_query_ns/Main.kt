@@ -59,7 +59,7 @@ object Main {
 
     private fun execute(): List<DNSRR> {
         logger.info("constructing DNS queries...")
-        val executor = Executors.newFixedThreadPool(32)
+        val executor = Executors.newFixedThreadPool(128)
         val queries = ArrayList<Future<LookupTask>>()
         for (d in domains) {
             for (s in dnsServers) {
